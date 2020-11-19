@@ -66,16 +66,16 @@ int main() {
 			while (true) {
 				vib = menu();
 				if (vib == 0) {
-					cout << "Название: ";
+					cout << "РќР°Р·РІР°РЅРёРµ: ";
 					string nam1 = writeWords();
 					strcpy_s(nam, nam1.c_str());
-					cout << "Место обитания: ";
+					cout << "РњРµСЃС‚Рѕ РѕР±РёС‚Р°РЅРёСЏ: ";
 					string mesto1 = writeWords();
 					strcpy_s(mesto, mesto1.c_str());
-					cout << "Тип шерсти: ";
+					cout << "РўРёРї С€РµСЂСЃС‚Рё: ";
 					string sh1 = writeWords();
 					strcpy_s(sh, sh1.c_str());
-					cout << "Цвет: ";
+					cout << "Р¦РІРµС‚: ";
 					string clr1 = writeWords();
 					strcpy_s(clr, clr1.c_str());
 					Animal** p1 = new Animal * [n + 1];
@@ -87,16 +87,16 @@ int main() {
 				}
 				else if (vib == 1) {
 					cin.clear();
-					cout << "Название: ";
+					cout << "РќР°Р·РІР°РЅРёРµ: ";
 					string nam1 = writeWords();
 					strcpy_s(nam, nam1.c_str());
-					cout << "Место обитания: ";
+					cout << "РњРµСЃС‚Рѕ РѕР±РёС‚Р°РЅРёСЏ: ";
 					string mesto1 = writeWords();
 					strcpy_s(mesto, mesto1.c_str());
-					cout << "Тип питания: ";
+					cout << "РўРёРї РїРёС‚Р°РЅРёСЏ: ";
 					string tp1 = writeWords();
 					strcpy_s(tp, tp1.c_str());
-					cout << "Размер(см): ";
+					cout << "Р Р°Р·РјРµСЂ(СЃРј): ";
 					rz = getInt();
 					Animal** p1 = new Animal * [n + 1];
 					copy(p, p + n, p1);
@@ -107,26 +107,26 @@ int main() {
 				}
 				else if (vib == 2) {
 					cin.clear();
-					cout << "Название: ";
+					cout << "РќР°Р·РІР°РЅРёРµ: ";
 					string nam1 = writeWords();
 					strcpy_s(nam, nam1.c_str());
-					cout << "Место обитания: ";
+					cout << "РњРµСЃС‚Рѕ РѕР±РёС‚Р°РЅРёСЏ: ";
 					string mesto1 = writeWords();
 					strcpy_s(mesto, mesto1.c_str());
-					cout << "Тип шерсти: ";
+					cout << "РўРёРї С€РµСЂСЃС‚Рё: ";
 					string sh1 = writeWords();
 					strcpy_s(sh, sh1.c_str());
-					cout << "Цвет: ";
+					cout << "Р¦РІРµС‚: ";
 					string clr1 = writeWords();
 					strcpy_s(clr, clr1.c_str());
-					cout << "Тип питания: ";
+					cout << "РўРёРї РїРёС‚Р°РЅРёСЏ: ";
 					string tp1 = writeWords();
 					strcpy_s(tp, tp1.c_str());
-					cout << "Размер(см): ";
+					cout << "Р Р°Р·РјРµСЂ(СЃРј): ";
 					rz = getInt();
-					cout << "Количество зубов: ";
+					cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ Р·СѓР±РѕРІ: ";
 					kol = getInt();
-					cout << "Продолжительность жизни(лет): ";
+					cout << "РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ Р¶РёР·РЅРё(Р»РµС‚): ";
 					ag = getInt();
 					Animal** p1 = new Animal * [n + 1];
 					copy(p, p + n, p1);
@@ -141,7 +141,7 @@ int main() {
 		}
 		else if (vibm == 1) {
 			if (n == 0) {
-				cout << "Нет введенной информации!!!" << endl;
+				cout << "РќРµС‚ РІРІРµРґРµРЅРЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРё!!!" << endl;
 			}
 			else {
 				for (int i = 0; i < n; i++) {
@@ -181,15 +181,15 @@ HomeAnimal::HomeAnimal(char* n, char* m, char* s, char* c) :Animal(n, m) {
 
 void HomeAnimal::show() {
 	cout << endl;
-	cout << "Название: " << name << endl
-		<< "Место обитания: " << ms << endl
-		<< "Тип шерсти: " << sch << endl
-		<< "Цвет: " << color << endl << endl;
+	cout << "РќР°Р·РІР°РЅРёРµ: " << name << endl
+		<< "РњРµСЃС‚Рѕ РѕР±РёС‚Р°РЅРёСЏ: " << ms << endl
+		<< "РўРёРї С€РµСЂСЃС‚Рё: " << sch << endl
+		<< "Р¦РІРµС‚: " << color << endl << endl;
 }
 
 void HomeAnimal::Type()
 {
-	cout << "Домашнее животное" << endl;
+	cout << "Р”РѕРјР°С€РЅРµРµ Р¶РёРІРѕС‚РЅРѕРµ" << endl;
 }
 
 HomeAnimal::~HomeAnimal() {
@@ -205,15 +205,15 @@ WildAnimal::WildAnimal(char* n, char* m, char* p, int r) :Animal(n, m) {
 
 void WildAnimal::show() {
 	cout << endl;
-	cout << "Название: " << name << endl
-		<< "Место обитания: " << ms << endl
-		<< "Тип питания: " << pt << endl
-		<< "Размер: " << razmer << " см" << endl << endl;
+	cout << "РќР°Р·РІР°РЅРёРµ: " << name << endl
+		<< "РњРµСЃС‚Рѕ РѕР±РёС‚Р°РЅРёСЏ: " << ms << endl
+		<< "РўРёРї РїРёС‚Р°РЅРёСЏ: " << pt << endl
+		<< "Р Р°Р·РјРµСЂ: " << razmer << " СЃРј" << endl << endl;
 }
 
 void WildAnimal::Type()
 {
-	cout << "Дикое животное" << endl;
+	cout << "Р”РёРєРѕРµ Р¶РёРІРѕС‚РЅРѕРµ" << endl;
 }
 
 WildAnimal::~WildAnimal() {
@@ -227,19 +227,19 @@ Rodent::Rodent(char* n, char* m, char* s, char* c, char* p, int r, int k, int a)
 
 void Rodent::show() {
 	cout << endl;
-	cout << "Название: " << name << endl
-		<< "Место обитания: " << ms << endl
-		<< "Тип шерсти: " << sch << endl
-		<< "Цвет: " << color << endl
-		<< "Тип питания: " << pt << endl
-		<< "Размер: " << razmer << " см" << endl
-		<< "Кол-во зубов: " << kolzub << endl
-		<< "Продолжительность жизни: " << age << " лет" << endl << endl;
+	cout << "РќР°Р·РІР°РЅРёРµ: " << name << endl
+		<< "РњРµСЃС‚Рѕ РѕР±РёС‚Р°РЅРёСЏ: " << ms << endl
+		<< "РўРёРї С€РµСЂСЃС‚Рё: " << sch << endl
+		<< "Р¦РІРµС‚: " << color << endl
+		<< "РўРёРї РїРёС‚Р°РЅРёСЏ: " << pt << endl
+		<< "Р Р°Р·РјРµСЂ: " << razmer << " СЃРј" << endl
+		<< "РљРѕР»-РІРѕ Р·СѓР±РѕРІ: " << kolzub << endl
+		<< "РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ Р¶РёР·РЅРё: " << age << " Р»РµС‚" << endl << endl;
 }
 
 void Rodent::Type()
 {
-	cout << "Грызун" << endl;
+	cout << "Р“СЂС‹Р·СѓРЅ" << endl;
 }
 
 Rodent::~Rodent() {
@@ -254,17 +254,17 @@ int menu()
 	{
 		choiceButton = (choiceButton + 4) % 4;
 
-		if (choiceButton == 0) cout << "->Домашние животные" << endl;
-		else cout << "Домашние животные" << endl;
+		if (choiceButton == 0) cout << "->Р”РѕРјР°С€РЅРёРµ Р¶РёРІРѕС‚РЅС‹Рµ" << endl;
+		else cout << "Р”РѕРјР°С€РЅРёРµ Р¶РёРІРѕС‚РЅС‹Рµ" << endl;
 
-		if (choiceButton == 1) cout << "->Дикие животные" << endl;
-		else cout << "Дикие животные" << endl;
+		if (choiceButton == 1) cout << "->Р”РёРєРёРµ Р¶РёРІРѕС‚РЅС‹Рµ" << endl;
+		else cout << "Р”РёРєРёРµ Р¶РёРІРѕС‚РЅС‹Рµ" << endl;
 
-		if (choiceButton == 2) cout << "->Грызуны" << endl;
-		else cout << "Грызуны" << endl;
+		if (choiceButton == 2) cout << "->Р“СЂС‹Р·СѓРЅС‹" << endl;
+		else cout << "Р“СЂС‹Р·СѓРЅС‹" << endl;
 
-		if (choiceButton == 3) cout << "->Выход" << endl;
-		else cout << "Выход" << endl;
+		if (choiceButton == 3) cout << "->Р’С‹С…РѕРґ" << endl;
+		else cout << "Р’С‹С…РѕРґ" << endl;
 
 		button = _getch();
 		if (button == 224)
@@ -290,14 +290,14 @@ int menuMain()
 	{
 		choiceButton = (choiceButton + 3) % 3;
 
-		if (choiceButton == 0) cout << "->Ввод информации" << endl;
-		else cout << "Ввод информации" << endl;
+		if (choiceButton == 0) cout << "->Р’РІРѕРґ РёРЅС„РѕСЂРјР°С†РёРё" << endl;
+		else cout << "Р’РІРѕРґ РёРЅС„РѕСЂРјР°С†РёРё" << endl;
 
-		if (choiceButton == 1) cout << "->Просмотр информации" << endl;
-		else cout << "Просмотр" << endl;
+		if (choiceButton == 1) cout << "->РџСЂРѕСЃРјРѕС‚СЂ РёРЅС„РѕСЂРјР°С†РёРё" << endl;
+		else cout << "РџСЂРѕСЃРјРѕС‚СЂ" << endl;
 
-		if (choiceButton == 2) cout << "->Выход" << endl;
-		else cout << "Выход" << endl;
+		if (choiceButton == 2) cout << "->Р’С‹С…РѕРґ" << endl;
+		else cout << "Р’С‹С…РѕРґ" << endl;
 
 		button = _getch();
 		if (button == 224)
@@ -358,7 +358,7 @@ string writeWords() {
 			if (Knopka == 13 && word.length() != 0) break;
 			else {
 				simvol = (char)Knopka;
-				if ((simvol >= 'а' && simvol <= 'я') || (simvol >= 'А' && simvol <= 'Я') || simvol == '-' || simvol == ' ' || simvol == '.') {
+				if ((simvol >= 'Р°' && simvol <= 'СЏ') || (simvol >= 'Рђ' && simvol <= 'РЇ') || simvol == '-' || simvol == ' ' || simvol == '.') {
 					word = word + simvol;
 					cout << simvol;
 				}
